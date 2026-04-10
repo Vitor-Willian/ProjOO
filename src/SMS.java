@@ -1,6 +1,7 @@
 public class SMS implements Notification {
     @Override
-    public void Notify(String msg){
-        System.out.println("SMS: " + msg);
+    public String Notify(String msg){
+        String resp = "SMS: " + msg;
+        return resp;
     }
 }

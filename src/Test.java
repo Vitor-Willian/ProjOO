@@ -1,7 +1,7 @@
 public class Test {
     void teste_instance(){
         Config_Global config = Config_Global.getInstance();
-        System.out.println("Executando teste inst");
+        config.setConfig();
     }
     void teste_notification(){
         

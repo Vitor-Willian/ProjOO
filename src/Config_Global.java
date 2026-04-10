@@ -8,4 +8,8 @@ public class Config_Global {
             instance = new Config_Global();
         return instance;
     }
+
+    public void setConfig(){
+        System.out.println("Config Set");
+    }
 }

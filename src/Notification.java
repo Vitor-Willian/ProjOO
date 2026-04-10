@@ -1,3 +1,3 @@
 public interface Notification {
-    void Notify(String msg);
+    String Notify(String msg);
 }
