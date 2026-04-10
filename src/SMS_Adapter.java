@@ -6,7 +6,7 @@ class SMS_Adapter implements Mensagem{
         this.mensage = mensage;
     }
 
-    public void enviar(){
-        mensage.Notify("Olha a msg!");
+    public String enviar(){
+       return mensage.Notify("Olha a msg!");
     }
 }

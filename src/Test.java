@@ -9,9 +9,22 @@ public class Test {
         Notification b = NotificationFactory.create_SMS();
         Notification c = NotificationFactory.create_Push();
 
-        a.Notify("Trabalho");
-        b.Notify("Fatura");
-        c.Notify("Tempestade");
+        System.out.println(a.Notify("Trabalho"));
+        System.out.println(b.Notify("Fatura"));
+        System.out.println(c.Notify("Tempo"));
 
+        Notification proxy = new Proxy_Notification(a);
+
+        System.out.println(proxy.Notify("Trabalho"));
+
+    }
+
+    void teste_adapter() {
+
+        SMS sms = new SMS();
+
+        Mensagem adp = new SMS_Adapter(sms);
+
+        System.out.println(adp.enviar());
     }
 }

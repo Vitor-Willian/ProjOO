@@ -1,3 +1,3 @@
 interface Mensagem{
-    void enviar();
+    String enviar();
 }

@@ -3,6 +3,7 @@ public class App {
         Test test = new Test();
         test.teste_notification();
         test.teste_instance();
+        test.teste_adapter();
     }
 }
 
