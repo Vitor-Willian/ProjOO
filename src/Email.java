@@ -1,6 +1,7 @@
 public class Email implements Notification {
     @Override
-    public void Notify(String msg){
-        System.out.println("Email: " + msg);
+    public String Notify(String msg){
+        String resp = "Email: " + msg;
+        return resp;
     }
 }

@@ -1,0 +1,3 @@
+interface Mensagem{
+    void enviar();
+}
